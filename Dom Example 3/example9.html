@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title>Java Script Demo</title>
+    <script>
+      function addPara() {
+        let para = document.createElement("p");
+        let text = document.createTextNode("This is top para");
+        para.appendChild(text);
+        let div = document.querySelector("#d1");
+        let p1 = document.querySelector("#p1");
+        div.insertBefore(para, p1);
+      }
+    </script>
+  </head>
+
+  <body>
+    <div id="d1">
+      <p id="p1">This is first paragraph.</p>
+      <p id="p2">This is second paragraph.</p>
+    </div>
+    <input type="button" value="add new para" onclick="addPara();" />
+  </body>
+</html>

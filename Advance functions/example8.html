@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Callback Example</title>
+    <script>
+      function area(radius, show) {
+        let ar = 3.14 * (radius * radius);
+        show(ar);
+      }
+
+      area(5, (ar) => {
+        document.write(`Area is ${ar}`);
+      });
+    </script>
+  </head>
+
+  <body></body>
+</html>

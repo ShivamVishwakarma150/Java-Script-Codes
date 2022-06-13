@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <title>For Loop Demo</title>
+    <script>
+      let n = Number(prompt("Enter a no:"));
+      let soe, sod;
+      soe = sod = 0;
+      for (let i = 1; i <= n; i++) {
+        if (i % 2 == 0) {
+          soe = soe + i;
+        } else {
+          sod = sod + i;
+        }
+      }
+      document.write(`Sum of even is ${soe}<br>`);
+      document.write(`Sum of odd is ${sod}<br>`);
+    </script>
+  </head>
+
+  <body></body>
+</html>

@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <title>Function Demo</title>
+    <script>
+      function greetings() {
+        document.write(
+          `Function called with ${arguments.length} arguments<br>`
+        );
+        for (let name of arguments) {
+          document.write(`Good Evening ${name}<br>`);
+        }
+        document.write("<br><br>");
+      }
+    </script>
+  </head>
+
+  <body>
+    <script>
+      document.write("<b>First call</b><br><br>");
+      greetings("sachin", "amit", "Ravi", "Varun");
+      document.write("<b>Second call</b><br><br>");
+      greetings("Ajay", "Kumar");
+      document.write("<b>Third call</b><br><br>");
+      greetings();
+    </script>
+  </body>
+</html>
